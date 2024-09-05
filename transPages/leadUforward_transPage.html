@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leadUforward</title>
+    <link rel="stylesheet" href="./css/Trans.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="icon" href="./transImage/adi_icon.png">
+    <link href="https://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+                
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>HTML project</h1>
+            <h2>'Lead You Foward'</h2>
+            <span>his project contains a simple HTML page designed to lead users forward in their career by providing a form for them to submit their details. The page serves as an entry point for professionals seeking to advance in their careers, offering a straightforward and user-friendly interface where they can easily input their contact information, current job title, and areas of interest or expertise. The form might also include options for uploading resumes or portfolios, giving users a seamless way to showcase their skills. Once the details are submitted, the information can be used to connect users with relevant job opportunities, networking events, or career resources, such as personalized coaching or resume reviews. The project can be further enhanced with responsive design elements to ensure accessibility across devices, and simple but effective CSS styling to create a professional and inviting appearance. With the addition of basic JavaScript for form validation and user interaction, this page can become a powerful tool for anyone looking to take the next step in their career.
+            </span>
+            
+
+            
+            <button class="button" onclick="downloadFile('./HTML_projects/leadUforward.rar')" >
+                Download
+            </button>
+
+        </div>
+        <div class="right-section">
+            <img src="./transImage/leadUfoward.png" alt="project picture" class="project-pic">
+        </div>
+    </div>
+</body>
+<script>
+    function downloadFile(url) {
+        var anchor = document.createElement('a');
+        anchor.style.display = 'none';
+        document.body.appendChild(anchor);
+
+        anchor.href = url;
+
+
+        anchor.download = '../leadUforward.rar';
+
+
+        anchor.click();
+
+
+        document.body.removeChild(anchor);
+    }
+</script>
+</html>

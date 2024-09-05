@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localStorage Market</title>
+    <link rel="stylesheet" href="./css/Trans.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="icon" href="./transImage/adi_icon.png" />
+    <link href="https://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+    <div class="left-section">
+        <h1>javaScript project</h1>
+        <h2>'localStorage Market'</h2>
+        <span>This is a simple web application that simulates a market where users can add products along with their prices and keep track of them using the browser's localStorage. Built with HTML and styled using Bootstrap, the app offers a clean and responsive interface, making it easy for users to manage their list of products. The application allows users to add new products by entering the product name and price, which are then stored in localStorage for persistence even after the page is refreshed. The added products are displayed in a list format, styled with Bootstrap's table components, providing a clear and organized view. Additionally, users can calculate the total sum of all listed products in real-time, and there is a feature to clear the list entirely if needed. Bootstrap's form controls and layout system enhance the app's usability and appearance, while localStorage ensures that the data remains available for the user's next visit. This project demonstrates how web technologies can be combined to create a practical and interactive tool for managing basic product data.
+        </span>
+
+        <button
+        class="button"
+        onclick="downloadFile('./JS_projects/localStorageMarket.rar')">
+        Download
+        </button>
+    </div>
+    <div class="right-section">
+        <img
+        src="./transImage/localStoregeMarket.png"
+        alt="project picture"
+        class="project-pic" />
+    </div>
+    </div>
+</body>
+<script>
+    function downloadFile(url) {
+    var anchor = document.createElement("a");
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.href = url;
+    anchor.download = "./JS_projects/localStorageMarket.rar";
+    anchor.click();
+
+    document.body.removeChild(anchor);
+    }
+</script>
+</html>

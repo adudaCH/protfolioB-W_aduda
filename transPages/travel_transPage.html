@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="./css/Trans.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="icon" href="./transImage/adi_icon.png">
+    <link href="https://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+                
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>HTML project</h1>
+            <h2>'Travel'</h2>
+            <span>This project contains an HTML page designed as a landing page for travel enthusiasts, where users can explore images and share their travel experiences. The page is thoughtfully crafted to captivate the wanderlust in every visitor, featuring a gallery of stunning travel images that invite users to explore new destinations visually. With a simple yet elegant design powered by HTML, CSS, and SASS, the page offers a smooth and visually appealing experience. Users can not only browse through these images but also engage with the community by sharing their own travel stories and photos, creating a vibrant space for travel lovers to connect and inspire one another. The use of SASS allows for more efficient and organized styling, making the page both aesthetically pleasing and easy to maintain. Whether users are looking to relive their past adventures or find inspiration for their next journey, this landing page serves as the perfect gateway to a world of travel possibilities.
+            </span>
+            
+
+            
+            <button class="button" onclick="downloadFile('./HTML_projects/projectTravel.rar')" >
+                Download
+            </button>
+
+        </div>
+        <div class="right-section">
+            <img src="./transImage/travel.png" alt="project picture" class="project-pic">
+        </div>
+    </div>
+</body>
+<script>
+    function downloadFile(url) {
+        var anchor = document.createElement('a');
+        anchor.style.display = 'none';
+        document.body.appendChild(anchor);
+
+        anchor.href = url;
+
+
+        anchor.download = '../projectTravel.rar';
+
+
+        anchor.click();
+
+
+        document.body.removeChild(anchor);
+    }
+</script>
+</html>
