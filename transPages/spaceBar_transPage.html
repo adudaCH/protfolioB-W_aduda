@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Bar</title>
-    <link rel="stylesheet" href="./css/Trans.css">
-    <link rel="stylesheet" href="./css/button.css">
-    <link rel="icon" href="./transImage/adi_icon.png">
-    <link href="https://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-                
-</head>
-<body>
-    <div class="container">
-        <div class="left-section">
-            <h1>HTML project</h1>
-            <h2>'Space Bar'</h2>
-            <span>This project involves the development of a responsive web application designed to facilitate the registration process for various benefits. The application is built using HTML for structuring the content and SASS for styling and layout. It provides a user-friendly interface where applicants can easily navigate through the registration steps, input their personal details, and submit the necessary documentation. The design emphasizes accessibility and clarity, ensuring that users of all backgrounds can efficiently complete their registrations. The SASS preprocessor is used to create modular, maintainable, and scalable CSS, enhancing both the aesthetics and functionality of the application.</span>
-            
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space Bar</title>
+        <link rel="stylesheet" href="./css/Trans.css" />
+        <link rel="stylesheet" href="./css/button.css" />
+        <link rel="icon" href="./transImage/adi_icon.png" />
+        <link
+            href="https://fonts.cdnfonts.com/css/minion-pro"
+            rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-section">
+                <h1>HTML project</h1>
+                <h2>'Space Bar'</h2>
+                <span
+                    >This project involves the development of a responsive web
+                    application designed to facilitate the registration process
+                    for various benefits. The application is built using HTML
+                    for structuring the content and SASS for styling and layout.
+                    It provides a user-friendly interface where applicants can
+                    easily navigate through the registration steps, input their
+                    personal details, and submit the necessary documentation.
+                    The design emphasizes accessibility and clarity, ensuring
+                    that users of all backgrounds can efficiently complete their
+                    registrations. The SASS preprocessor is used to create
+                    modular, maintainable, and scalable CSS, enhancing both the
+                    aesthetics and functionality of the application.</span
+                >
 
-            
-            <div class="button-group">
+                <div class="button-group">
                     <button
                         class="button"
                         onclick="downloadFile('./HTML_projects/projetspacebar.rar')">
@@ -31,33 +45,32 @@
 
                     <a
                         class="button"
-                    href="">
+                        href="https://adudach.github.io/spaceBar_aduda/">
                         Enter Site
-                </a>
+                    </a>
                 </div>
-
+            </div>
+            <div class="right-section">
+                <img
+                    src="./transImage/spaceBar.png"
+                    alt="project picture"
+                    class="project-pic" />
+            </div>
         </div>
-        <div class="right-section">
-            <img src="./transImage/spaceBar.png" alt="project picture" class="project-pic">
-        </div>
-    </div>
-</body>
-<script>
-    function downloadFile(url) {
-        var anchor = document.createElement('a');
-        anchor.style.display = 'none';
-        document.body.appendChild(anchor);
+    </body>
+    <script>
+        function downloadFile(url) {
+            var anchor = document.createElement("a");
+            anchor.style.display = "none";
+            document.body.appendChild(anchor);
 
-        anchor.href = url;
+            anchor.href = url;
 
+            anchor.download = "../projetspacebar.rar";
 
-        anchor.download = '../projetspacebar.rar';
+            anchor.click();
 
-
-        anchor.click();
-
-
-        document.body.removeChild(anchor);
-    }
-</script>
+            document.body.removeChild(anchor);
+        }
+    </script>
 </html>
