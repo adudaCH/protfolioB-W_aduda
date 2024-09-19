@@ -34,7 +34,7 @@
     }; // end ssPreloader
 
 
-   /* move header
+/* move header
     * -------------------------------------------------- */
     const ssMoveHeader = function () {
 
@@ -296,7 +296,7 @@
     }; // end ssMoveTo
 
 
-   /* Initialize
+/* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
 
@@ -312,3 +312,26 @@
     })();
 
 })(document.documentElement);
+/* contact
+    * ------------------------------------------------------ */
+
+document.getElementById("sendButton").addEventListener("click", function () {
+    // Get the form values
+    const name = document.getElementById("name").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+
+    if (!name || !subject || !message) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    
+    const mailtoLink = `mailto:adi15061992@gmail.com?subject=${encodeURIComponent(
+        subject
+    )}&body=${encodeURIComponent("Name: " + name + "\n\nMessage: " + message)}`;
+
+    
+    window.location.href = mailtoLink;
+});
