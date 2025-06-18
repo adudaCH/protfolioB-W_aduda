@@ -35,6 +35,23 @@
       href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
   </head>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  const slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change slide every 4 seconds
+}
+</script>
 
   <body id="top">
     <!-- preloader
@@ -278,7 +295,7 @@
         </div>
       
       <div class="show-projects-container">
-                <div class="card">    
+                <!-- <div class="card">    
                     <h3 class="card__title">The Deer Hunter
                     </h3>
                     <p class="card__content">Inspire from the 1978 classic.</p>
@@ -349,7 +366,21 @@
                         </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
+                <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/Americam Sniper.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/the Deer Hunter.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/hidden figures modern.png" style="width:100%">
+  </div>
+</div>
+
           </div>
             
 
