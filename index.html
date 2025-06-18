@@ -35,23 +35,7 @@
       href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
   </head>
-<script>
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  const slides = document.getElementsByClassName("mySlides");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change slide every 4 seconds
-}
-</script>
 
   <body id="top">
     <!-- preloader
@@ -109,7 +93,7 @@ function showSlides() {
               <h1 class="s-intro__content-title">
                 I'm Adi Saadya, <br />
                 a Digital Artist 
-                & graphic designer.
+                & Graphic Designer.
               </h1>
 
               <div class="s-intro__content-btns">
@@ -295,97 +279,55 @@ function showSlides() {
         </div>
       
       <div class="show-projects-container">
-                <!-- <div class="card">    
-                    <h3 class="card__title">The Deer Hunter
-                    </h3>
-                    <p class="card__content">Inspire from the 1978 classic.</p>
-                    <div class="card__arrow">
-                        <a target="_blank" href="./transPages/theDeerHunter.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">    
-                    <h3 class="card__title">Hidden Figures 
-                    </h3>
-                    <p class="card__content"> Inspire from the love for physics. </p>
-                    <div class="card__arrow">
-                        <a target="_blank" href="./transPages/Hidden Figures.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">    
-                    <h3 class="card__title">The Imitation Game
-                    </h3>
-                    <p class="card__content"> A spy thrillers omage.</p>
-                    <div class="card__arrow">
-                    <a target="_blank" href="./transPages/The Imitation Game.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">    
-                    <h3 class="card__title">American Sniper
-                    </h3>
-                    <p class="card__content"> Award wining American war movie</p>
-                    <div class="card__arrow">
-                    <a target="_blank" href="./transPages/American Sniper.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">    
-                    <h3 class="card__title">Space Bar
-                    </h3>
-                    <p class="card__content">Web application designed to facilitate the registration process for various benefits.. </p>
-                    <div class="card__arrow">
-                    <a target="_blank" href="./transPages/spaceBar_transPage.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">    
-                    <h3 class="card__title">Wooster
-                    </h3>
-                    <p class="card__content">This project is a website for "Wooster Digital B&W Photography", designed to showcase black and white photography in a stylish and professional manner. </p>
-                    <div class="card__arrow">
-                    <a target="_blank" href="./transPages/wooster_tarnsPage.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                        </a>
-                    </div>
-                </div> -->
-                <div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="images/Americam Sniper.png" style="width:100%">
-  </div>
+  <div class="slideshow-container">
 
+  <div class="mySlides fade">
+    <img src="images/HPphilosopher_s stone .png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/hp chamber of secrets modern.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/HP prisoner of azkaban .png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/HP  goblet of fire.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/5 HP and the order of the phoenix modern.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/6 HP and the half blood prince modern.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/7 HP and the deathly hallows modern.png" style="width:100%">
+  </div>
   <div class="mySlides fade">
     <img src="images/the Deer Hunter.png" style="width:100%">
   </div>
-
+  <div class="mySlides fade">
+    <img src="images/Hannibal modern.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/Americam Sniper.png" style="width:100%">
+  </div>
   <div class="mySlides fade">
     <img src="images/hidden figures modern.png" style="width:100%">
   </div>
+  <div class="mySlides fade">
+    <img src="images/the imitation game.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/wonder woman 17_ modern.png" style="width:100%">
+  </div>
+
+  <!-- חיצים -->
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
 </div>
 
           </div>
-            
-
-
-        
         <!-- end s-testimonials -->
       </section>
       <!-- end s-works -->
@@ -396,7 +338,7 @@ function showSlides() {
                   <div class="row">
           <div class="column xl-12">
             <!-- end section-header -->
-            <h3 class="text-display">javaScript</h3>
+            <h3 class="text-display">Logos</h3>
           </div>
         </div>
           <div class="show-projects-container">
@@ -491,16 +433,15 @@ function showSlides() {
 
         <div class="row s-footer__content">
           <div class="column xl-6 md-12 s-footer__block s-footer__about">
-            <p class="attention-getter"> I'm really looking forward to making my first steps into this dynamic field of web development, and to get the opportunity to create interactive and impactful digital experiences. I'm excited to learn and grow, to overcome challenges, and to continuously improve my skills. This journey is not just about coding, but about turning ideas into reality.
+            <p class="attention-getter"> If you saw something you like, contact me and share it with your friends.
           </div>
           <!-- end section-footer__about -->
 
             <ul class="link-list">
-                  <li><a target="_blank" href="mailto:#adi15061992@gmail.com">adi15061992@gmail.com</a></li>
-                  <li><a target="_blank" href="tel:+972547303119">+972 5473 03119</a></li>
+                  <li><a target="_blank" href="mailto:#adi15061992@gmail.com">E-mail</a></li>
+                  <li><a target="_blank" href="tel:+972547303119">Phone</a></li>
                   <li><a target="_blank" href="https://wa.me/972547303119">whatsUp</a></li>
                   <li><a target="_blank" href="https://www.linkedin.com/in/adisaadya/">LinkedIn </a></li>
-                  <li><a target="_blank" href="https://github.com/adudaCH">gitHub</a></li>
                 </ul>
 
 
@@ -555,4 +496,25 @@ function showSlides() {
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
   </body>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
+</script>
+
 </html>
